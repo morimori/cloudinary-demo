@@ -1,0 +1,14 @@
+defaults: &defaults
+  cloudinary:
+    cloud_name: <%= Endeco.cloudinary_name %>
+    api_key: <%= Endeco.cloudinary_api_key %>
+    api_secret: <%= Endeco.cloudinary_api_secret %>
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
